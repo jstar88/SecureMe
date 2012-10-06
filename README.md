@@ -7,11 +7,12 @@ Perhaps it support the UTF-8 encoding and there aren't adverse effects like java
 
  Usage
 ------------- 
- in the main page of your application:
- <code> 
+ in the main page of your application, but after you done a db connection, put:
+ 
+ ``` php 
  require('class.SecureMe.php');
  SecureMe::run(); 
- </code>
+ ```
  
  Explanation
 -------------
@@ -27,5 +28,5 @@ The most common xss attack will be blocked replacing or deleting the word "scrip
 Using htmlentities all attempts are time waste
 
  sql-injection:
-nothing better than mysql_real_escape_string!
+nothing better than _mysql_real_escape_string_!
  
